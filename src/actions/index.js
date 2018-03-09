@@ -20,3 +20,22 @@ export const VisibilityFilters = {
   SHOW_COMPLETED: 'SHOW_COMPLETED',
   SHOW_ACTIVE: 'SHOW_ACTIVE'
 }
+
+// ---- Users ---- //
+
+// Actions
+export const SHOW_USERS = 'SHOW_USERS'
+
+// Action Creators
+export function loadUsers(users){
+  return { type: SHOW_USERS, payload: users}
+}
+
+// Api
+export function showUsers(){
+  return dispatch => {
+    fetch('http://jsonplaceholder.typicode.com/users')
+      .then( response => response.json())
+      .then( response => { console.log(response, 'rrr');dispatch( loadUsers(response)) })
+  }
+}
