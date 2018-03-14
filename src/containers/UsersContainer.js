@@ -1,21 +1,16 @@
 import React, { Component } from 'react'
 import { connect } from 'react-redux'
 import { showUsers } from '../actions'
-import ListUsers from '../components/ListUsers'
+import UsersComponent from '../components/UsersComponent'
 
-class Users extends Component {
-    
-    constructor(){
-        super()
-    }
-    
+class UsersContainer extends Component {
+        
     componentDidMount() {
         this.props.showUsers();
-        console.log(this.props);
     }
 
     render() {
-        return <ListUsers {...this.props} />
+        return <UsersComponent {...this.props} />
     }
 }
 
@@ -25,4 +20,4 @@ const mapStateToProps = (state) => {
     }
 }
 
-export default connect(mapStateToProps, { showUsers })(Users)
+export default connect(mapStateToProps, { showUsers })(UsersContainer)

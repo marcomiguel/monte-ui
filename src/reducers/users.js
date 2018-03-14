@@ -1,12 +1,14 @@
 const initialState = {
-    list: []
+    list: [],
+    selected: {}
 }
 
 const showUsers = (state = initialState, action) => {
     switch(action.type){
         case 'SHOW_USERS':
-            console.log(action, 'accc');
             return Object.assign({}, state, { list: action.payload })
+        case 'SHOW_USER':
+            return Object.assign({}, state, { selected: action.payload })
         default:
             return state
     }        

@@ -25,10 +25,15 @@ export const VisibilityFilters = {
 
 // Actions
 export const SHOW_USERS = 'SHOW_USERS'
+export const SHOW_USER = 'SHOW_USER'
 
 // Action Creators
 export function loadUsers(users){
   return { type: SHOW_USERS, payload: users}
+}
+
+export function loadUser(user){
+  return { type: SHOW_USER, payload: user}
 }
 
 // Api
@@ -36,6 +41,14 @@ export function showUsers(){
   return dispatch => {
     fetch('http://jsonplaceholder.typicode.com/users')
       .then( response => response.json())
-      .then( response => { console.log(response, 'rrr');dispatch( loadUsers(response)) })
+      .then( response => { dispatch( loadUsers(response)) })
+  }
+}
+
+export function getUser(userId){
+  return dispatch => {
+    fetch(`http://jsonplaceholder.typicode.com/users/${userId}`)
+      .then( response => response.json())
+      .then( response => { dispatch( loadUser(response)) })
   }
 }
