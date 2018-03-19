@@ -1,60 +1,31 @@
 import React, { Component } from 'react';
-import AddTodo from './containers/AddTodo'
-import Footer from './components/Footer'
-import VisibleTodoList from './containers/VisibleTodoList'
+import { Switch, Route } from 'react-router-dom'
+import 'normalize.css';
+
 import UsersContainer from './containers/UsersContainer'
 import UserContainer from './containers/UserContainer'
+import Dashboard from './pages/Dashboard'
+import Todo from './pages/Todo'
+import './css/style.css'
 
-import { Switch, Route, Link } from 'react-router-dom'
-
-const Header = () => (
-  <header>
-    <nav>
-      <ul>
-        <li><Link to="/">Welcome</Link></li>
-        <li><Link to="/todo">Todo</Link></li>
-        <li><Link to="/users">Users</Link></li>
-      </ul>
-    </nav>
-  </header>
-)
-
-const Users = () => (
+const UsersRouting = () => (
   <Switch>
     <Route exact path='/users' component={UsersContainer}/>
     <Route path='/user/:id' component={UserContainer}/>
   </Switch>
 )
 
-const Main = () => (
-  <main>
-    <Switch>
-      <Route exact path="/" component={Welcome}/>
-      <Route path="/users" component={Users}/>
-      <Route exact path="/todo" component={Todo}/>
-    </Switch>
-  </main>
+const AppRouting = () => (
+  <Switch>
+    <Route path="/users" component={UsersRouting}/>
+    <Route exact path="/todo" component={Todo}/>
+    <Route exact path="/dashboard" component={Dashboard}/>
+  </Switch>
 )
-
-const Welcome = () => <div>Welcome!</div>
-
-const Todo = () => (
-  <div>
-    <AddTodo/>
-    <VisibleTodoList/>
-    <Footer/>
-  </div>
-)
-
 
 class App extends Component{
   render(){
-    return (
-      <div>
-        <Header/>
-        <Main/>
-      </div>
-    )
+    return (<AppRouting/>)
   }
 }
 
