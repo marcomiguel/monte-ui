@@ -18,4 +18,25 @@
     letter-spacing: normal;
     text-align: left;
     color: #2d3f50;
+    flex: 1;
+}
+
+.sentri-divisor {
+    width: 1px;
+    height: 24px;
+    opacity: 0.5;
+    background-color: #999999;
+    margin: 0 16px;
+}
+
+.sentri-avatar {
+    width: 32px !important;
+    height: 32px !important;
+    font-size: 1rem !important;
+}
+
+#sentri-header-buttons {
+    display: flex;
+    align-items: center;
+    min-width: 225px;
 }
