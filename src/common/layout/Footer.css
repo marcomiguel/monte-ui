@@ -4,10 +4,8 @@
     width: 100%;
     height: 64px;
     background-color: #4477b7;
-    /*dev*/
-    position: fixed;
+    /* position: fixed; */
     bottom: 0;
-    /*dev*/
 }
 .sentri-footer .sentri-sentri {
     width: 119px;

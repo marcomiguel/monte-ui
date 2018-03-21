@@ -1,0 +1,57 @@
+[
+    {
+        "id": "001-002-003ABC",
+        "product": "Genzumab",
+        "status": "Serious",
+        "valid": true,
+        "reporter": "Health Care Provider",
+        "patient": "Katie Zhao",
+        "comments": [
+
+        ]
+    },
+    {
+        "id": "002-002-003ABC",
+        "product": "Fortex",
+        "status": "Serious",
+        "valid": true,
+        "reporter": "Family member",
+        "patient": "Diego Alvarez",
+        "comments": [
+            
+        ]
+    },
+    {
+        "id": "002-002-003ABC",
+        "product": "Fortex",
+        "status": "Serious",
+        "valid": true,
+        "reporter": "Family member",
+        "patient": "Diego Alvarez",
+        "comments": [
+            
+        ]
+    },
+    {
+        "id": "002-002-003ABC",
+        "product": "Fortex",
+        "status": "Serious",
+        "valid": true,
+        "reporter": "Family member",
+        "patient": "Diego Alvarez",
+        "comments": [
+            
+        ]
+    },
+    {
+        "id": "002-002-003ABC",
+        "product": "Fortex",
+        "status": "Serious",
+        "valid": true,
+        "reporter": "Family member",
+        "patient": "Diego Alvarez",
+        "comments": [
+            
+        ]
+    }
+]

@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import { connect } from 'react-redux'
-import { showUsers } from '../actions'
+import { showUsers } from '../redux/modules/users'
 import UsersComponent from '../components/UsersComponent'
 
 class UsersContainer extends Component {
@@ -16,7 +16,7 @@ class UsersContainer extends Component {
 
 const mapStateToProps = (state) => {
     return {
-        users: state.user.list
+        users: state.users.list
     }
 }
 

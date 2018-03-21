@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
-import { Link } from 'react-router-dom'
 import './Navigation.css'
+import SimpleList from './NavigationItems'
 
 class Navigation extends Component{
 
@@ -23,12 +23,7 @@ class Navigation extends Component{
                     <span>toggle menu</span>    
                 </button>
                 <nav className={`navigation-panel ${ showPanel ? 'navigation-panel-open': '' }`}>
-                    <ul>
-                        <li><Link to="/todo">All Cases</Link></li>
-                        <li><Link to="/users">History</Link></li>
-                        <li><Link to="/dashboard">Help Center</Link></li>
-                        <li><Link to="/dashboard">My Links</Link></li>
-                    </ul>
+                    <SimpleList/>
                 </nav>
             </div>
         )

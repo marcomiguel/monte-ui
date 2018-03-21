@@ -1,0 +1,10 @@
+.case-card {
+    margin-bottom: 24px;
+}
+.case-card:last-child {
+    margin-bottom: 0 !important;
+}
+.case-card-component {
+    padding: 32px !important;
+    display: flex;
+}

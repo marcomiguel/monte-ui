@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import { connect } from 'react-redux'
-import { getUser } from '../actions'
+import { getUser } from '../redux/modules/users'
 // import UserComponent from '../components/UserComponent'
 
 class UserContainer extends Component {

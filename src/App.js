@@ -5,7 +5,6 @@ import 'normalize.css';
 import UsersContainer from './containers/UsersContainer'
 import UserContainer from './containers/UserContainer'
 import Dashboard from './pages/Dashboard'
-import Todo from './pages/Todo'
 import './css/style.css'
 
 const UsersRouting = () => (
@@ -17,8 +16,8 @@ const UsersRouting = () => (
 
 const AppRouting = () => (
   <Switch>
+    <Route exact path="/" component={Dashboard}/>
     <Route path="/users" component={UsersRouting}/>
-    <Route exact path="/todo" component={Todo}/>
     <Route exact path="/dashboard" component={Dashboard}/>
   </Switch>
 )
