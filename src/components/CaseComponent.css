@@ -7,4 +7,137 @@
 .case-card-component {
     padding: 32px !important;
     display: flex;
+    font-family: Roboto;
+}
+.case-card-component .ccc-header {
+    flex: 0 0 56px;
+}
+.case-card-component .ccc-column-a {
+    flex: 0 0 224px;
+    display: flex;
+    flex-direction: column;
+}
+.case-card-component .ccc-column-a .ccc-id {
+    font-size: 20px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: left;
+    color: #2d3f50;
+}
+.case-card-component .ccc-column-b{
+    flex: 0 0 240px;
+    display: flex;
+    flex-direction: column;
+}
+.case-card-component .ccc-column-b .ccc-header-b {
+    font-size: 20px;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: left;
+    color: #2d3f50;
+    text-transform: uppercase;
+}
+.case-card-component .ccc-column-c{
+    flex: 0 0 240px;
+    display: flex;
+    flex-direction: column;
+}
+.case-card-component .ccc-column-c .ccc-header-c {
+    font-size: 20px;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: 0.8px;
+    text-align: left;
+    color: #2d3f50;
+    text-transform: uppercase;
+}
+.case-card-component .ccc-column-title {
+    font-size: 14px;
+    font-weight: 500;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: 0.5px;
+    text-align: left;
+    color: #4477b7;
+    text-decoration: underline;
+    text-transform: uppercase;
+    flex: 0 0 32px;
+}
+
+.case-card-component .ccc-column-description {
+    font-size: 16px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.19;
+    letter-spacing: 0.6px;
+    text-align: left;
+    color: #999999;
+}
+
+.case-card-component .ccc-column-d {
+    flex: 0 0 249px;
+    display: flex;
+    flex-direction: column;
+}
+
+.case-card-component .ccc-column-d .ccc-header-d {
+    font-size: 20px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: left;
+    color: #2d3f50;
+}
+
+.case-card-component .ccc-column-e {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+
+.case-card-component .ccc-column-e .btn-view-case {
+    border: none;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-family: Roboto;
+    font-size: 14px;
+    font-weight: 500;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: center;
+    color: #ffffff;
+    cursor: pointer;
+    width: 104px;
+    height: 32px;
+    border-radius: 2px;
+    background-color: #4477b7;
+    text-transform: uppercase;
+}
+
+.case-card-component .ccc-column-e .btn-comments {
+    font-size: 13px;
+    font-weight: 500;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: 0.5px;
+    text-align: right;
+    color: #4477b7;
 }

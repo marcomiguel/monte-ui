@@ -1,6 +1,7 @@
 .sentri-header{
     width: 100%;
     height: 64px;
+    /* padding: 0 32px 0 27px; */
     background-color: #ffffff;
     display: flex;
     align-items: center;
@@ -38,5 +39,6 @@
 #sentri-header-buttons {
     display: flex;
     align-items: center;
+    justify-content: flex-end;
     min-width: 225px;
 }

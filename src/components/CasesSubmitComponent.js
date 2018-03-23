@@ -3,13 +3,13 @@ import PropTypes from 'prop-types'
 import ExpansionPanel, { ExpansionPanelSummary, ExpansionPanelDetails, } from 'material-ui/ExpansionPanel';
 import Typography from 'material-ui/Typography';
 import ExpandMoreIcon from 'material-ui-icons/ExpandMore';
-// import './CaseComponent.css'
+import './CasesSubmitComponent.css'
 
 const CasesSubmitComponent = props => (
-    <div style={{ marginBottom: '100px'}}>
+    <div id="wrapper-cases-submit">
         <ExpansionPanel>
             <ExpansionPanelSummary expandIcon={<ExpandMoreIcon />}>
-                <Typography>6 Sentri-Secure cases ready to submit</Typography>
+                <Typography className="cases-submit-title">6 Sentri-Secure cases ready to submit</Typography>
             </ExpansionPanelSummary>
             <ExpansionPanelDetails>
                 <Typography>

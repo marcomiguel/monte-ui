@@ -1,13 +1,13 @@
 import React, { Component } from 'react'
 import SentriLayout from '../common/layout/Layout'
-import SentriCounter from '../common/layout/Counter'
+import CounterContainer from '../containers/CounterContainer'
 import CasesContainer from '../containers/CasesContainer'
 
 class Dashboard extends Component {
     render(){
         return (
             <SentriLayout>
-                <SentriCounter/>
+                <CounterContainer/>
                 <CasesContainer/>
             </SentriLayout>
         )

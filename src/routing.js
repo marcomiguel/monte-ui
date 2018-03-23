@@ -22,10 +22,4 @@ const AppRouting = () => (
   </Switch>
 )
 
-class App extends Component{
-  render(){
-    return (<AppRouting/>)
-  }
-}
-
-export default App;
+export default AppRouting;

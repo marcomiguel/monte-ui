@@ -28,19 +28,19 @@ function SimpleList(props) {
           </ListItemIcon>
           <ListItemText primary="All Cases" />
         </ListItem>
-        <ListItem component={Link} to="/dashboard" button>
+        <ListItem component={Link} to="/" button>
           <ListItemIcon>
             <HistoryIcon />
           </ListItemIcon>
           <ListItemText primary="History" />
         </ListItem>
-        <ListItem component={Link} to="/users" button>
+        <ListItem component={Link} to="/" button>
           <ListItemIcon>
             <HelpOutlineIcon />
           </ListItemIcon>
           <ListItemText primary="Help Center" />
         </ListItem>
-        <ListItem component={Link} to="/users" button>
+        <ListItem component={Link} to="/" button>
           <ListItemIcon>
             <LinkIcon />
           </ListItemIcon>

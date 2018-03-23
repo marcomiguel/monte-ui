@@ -3,55 +3,78 @@
         "id": "001-002-003ABC",
         "product": "Genzumab",
         "status": "Serious",
-        "valid": true,
-        "reporter": "Health Care Provider",
-        "patient": "Katie Zhao",
+        "isValid": true,
+        "reporter": {
+            "status": "blue",
+            "name": "Health Care Provider"
+        },
+        "daysLeft": 2,
+        "patient": {
+            "status": "blue",
+            "name": "Katie Zhao"
+        },
         "comments": [
 
-        ]
+        ],
+        "eventPreview": {
+            "status": "orange",
+            "items": [
+                "Broken Femur",
+                "Diarrhea",
+                "Nervous",
+                "Hip Fracture"
+            ]
+        }
     },
     {
         "id": "002-002-003ABC",
         "product": "Fortex",
         "status": "Serious",
-        "valid": true,
-        "reporter": "Family member",
-        "patient": "Diego Alvarez",
+        "isValid": true,
+        "reporter": {
+            "status": "orange",
+            "name": "Family member"
+        },
+        "daysLeft": 3,
+        "patient": {
+            "status": "orange",
+            "name": "Diego Alvarez"
+        },
         "comments": [
             
-        ]
+        ],
+        "eventPreview": {
+            "status": "blue",
+            "items": [
+                "Cardiac Murmur",
+                "Fall",
+                "Anemia"
+            ]
+        }
     },
     {
-        "id": "002-002-003ABC",
-        "product": "Fortex",
-        "status": "Serious",
-        "valid": true,
-        "reporter": "Family member",
-        "patient": "Diego Alvarez",
+        "id": "003-002-003ABC",
+        "product": "Botiva",
+        "status": "Non-Serious",
+        "isValid": false,
+        "reporter": {
+            "status": "red",
+            "name": "N/A"
+        },
+        "daysLeft": 3,
+        "patient": {
+            "status": "blue",
+            "name": "Samantha Barr "
+        },
         "comments": [
             
-        ]
-    },
-    {
-        "id": "002-002-003ABC",
-        "product": "Fortex",
-        "status": "Serious",
-        "valid": true,
-        "reporter": "Family member",
-        "patient": "Diego Alvarez",
-        "comments": [
-            
-        ]
-    },
-    {
-        "id": "002-002-003ABC",
-        "product": "Fortex",
-        "status": "Serious",
-        "valid": true,
-        "reporter": "Family member",
-        "patient": "Diego Alvarez",
-        "comments": [
-            
-        ]
+        ],
+        "eventPreview": {
+            "status": "blue",
+            "items": [
+                "Abdominal Distension",
+                "Epigastric Discomfort"
+            ]
+        }
     }
 ]

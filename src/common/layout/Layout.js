@@ -7,7 +7,7 @@ class SentriLayout extends Component {
     return (
         <div>
             <SentriHeader/>
-            <div>{this.props.children}</div>
+            {this.props.children}
             <SentriFooter/>
         </div>
     )

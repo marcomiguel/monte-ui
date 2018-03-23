@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
-import './Counter.css'
+import './CounterComponent.css'
 
-class SentriCounter extends Component {
+class CounterComponent extends Component {
 
     state = {
         user: 'Nancy',
@@ -11,18 +11,19 @@ class SentriCounter extends Component {
 
     render(){
         const { user, newCases, inProgressCases } = this.state;
+        const { cases } = this.props;
         return (
             <section className="counter">
                 <div className="wrapper">
-                    <p>Good Morning {user}</p>
-                    <p>SENTRi has identified {newCases} new high-priority cases in addition to the in-progress cases from yesterday.</p>
+                    <div className="greeting">Good Morning {user}</div>
+                    <div className="info">SENTRi has identified { cases.length } new high-priority cases in addition to the in-progress cases from yesterday.</div>
                     <div className="counter-summary">
                         <div className="counter-summary-item">
-                            <span className="number">{newCases}</span>
+                            <span className="number">{ cases.length }</span>
                             <span className="status">new cases</span>
                         </div>
                         <div className="counter-summary-item">
-                            <span className="number">{inProgressCases}</span>
+                            <span className="number">{ inProgressCases }</span>
                             <span className="status">in progress</span>
                         </div>
                     </div>
@@ -32,4 +33,4 @@ class SentriCounter extends Component {
    } 
 }
 
-export default SentriCounter
+export default CounterComponent
