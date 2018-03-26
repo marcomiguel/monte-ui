@@ -1,0 +1,41 @@
+#sentri-user-menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: Roboto;
+    min-width: 138px;
+}
+
+#sentri-user-menu .sentri-avatar {
+    width: 32px !important;
+    height: 32px !important;
+    font-size: 1rem !important;
+}
+#sentri-user-menu .sentri-user-profile {
+    display: flex;
+    flex-direction: column;
+}
+#sentri-user-menu .sentri-user-profile .sentri-user-name {
+    font-size: 12px;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: left;
+    color: #2d3f50;
+    display: flex;
+    align-items: center;
+    height: 14px;
+}
+#sentri-user-menu .sentri-user-profile .sentri-user-rol {
+    font-size: 12px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.33;
+    letter-spacing: normal;
+    text-align: left;
+    color: #2d3f50;
+    text-transform: uppercase;
+}

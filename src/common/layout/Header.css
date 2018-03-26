@@ -1,10 +1,10 @@
-.sentri-header{
-    width: 100%;
+.sentri-header {
     height: 64px;
-    /* padding: 0 32px 0 27px; */
     background-color: #ffffff;
+    padding: 0 32px 0 27px;
     display: flex;
     align-items: center;
+    justify-content: space-between;
 }
 
 .sentri-slogan{
@@ -30,10 +30,13 @@
     margin: 0 16px;
 }
 
-.sentri-avatar {
-    width: 32px !important;
-    height: 32px !important;
-    font-size: 1rem !important;
+#sentri-header-info {
+    display: flex;
+    align-items: center;
+}
+
+#sentri-header-info .sentri-logo {
+    margin-left: 27px;
 }
 
 #sentri-header-buttons {

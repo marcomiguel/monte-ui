@@ -9,23 +9,30 @@ class SearchComponent extends Component {
         collapsed: true
     }
 
-    collapse() {
-        this.setState({ collapsed : !this.state.collapsed }); 
+    open() {
+        this.setState({ collapsed : false }); 
+    }
+
+    close() {
+        this.setState({ collapsed : true }); 
     }
 
     render(){
         const { collapsed } = this.state
         return (
             <div id="search-wrapper">
-                { !collapsed && <form>
-                    <input type="search" placeholder="" name="search" className="search-input"/>
-                </form> }
                 <div>
-                    <IconButton aria-label="Search" onClick={this.collapse.bind(this)}>
-                        { collapsed && <SearchIcon /> }
-                        { !collapsed && <CloseIcon /> }
+                    <IconButton onClick={this.open.bind(this)}>
+                        <SearchIcon />
                     </IconButton>
                 </div>
+                { !collapsed && 
+                <form className="search-form">
+                    <input type="text" placeholder="Search" name="search" className="search-input"/>
+                    <IconButton onClick={this.close.bind(this)} className="search-btn-close">
+                        <CloseIcon/>
+                    </IconButton>
+                </form> }
             </div>
         )
     } 
